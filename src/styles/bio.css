@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+.mainContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.bio-container {
+  padding-left: 10px;
+  border-bottom: solid 2px black;
+  border-right: solid 2px black;
+  width: 1200px;
+  height: 430px;
+}
+
+.profile-pic {
+  position: absolute;
+  margin-left: 800px;
+  margin-top: 40px;
+  /* position: absolute; */
+  /* margin-left: 900px; */
+}
+
+.Collapsible {
+  background-color: #57bcfa;
+  width: 750px;
+  margin-top: 70px;
+  margin-right: 40px;
+}
+
+.Collapsible__contentInner {
+  padding: 10px;
+  border: 2px solid lightGrey;
+  border-top: 0;
+}
+
+p {
+  margin-bottom: 10px;
+  line-height: 27px;
+  margin-bottom: 0;
+  color: white;
+  font-size: 20px;
+}
+
+.Collapsible__trigger {
+  display: block;
+  font-weight: 400;
+  text-decoration: none;
+  position: relative;
+  border: 2px solid white;
+  padding: 10px;
+  background: #4682b4;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* #inside-bio {
+  text-align: left;
+} */
+
+#inside-bio #bio-text-body {
+  text-align: center;
+}
+
+.bio-button a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  margin-top: 10px;
+  padding: 7px;
+  border: 2px solid black;
+  background: #46b478;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.bio-button {
+  /* Gives each link a left/right margin */
+  margin: 10px 70px 0px 70px;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+
+#socialMedia {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  padding-right: 200px;
+}
+
+.socialMedIcons {
+  margin-left: 22px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: space-between;
+}
+
+/* .socialMedIcons span {
+  display: inline-flex;
+} */
+
+#gitHub a {
+  color: red;
+  font-size: 400%;
+}
+
+#linkedin a {
+  /* margin-right: 30px; */
+  color: red;
+  font-size: 400%;
+}
+/* .fade,
+.show {
+  text-align: center;
+} */
+.overallModal {
+  margin-top: 5px;
+  margin-left: 370px;
+  /* text-align: center; */
+  width: 500px;
+  border: solid 3px black;
+  padding: 10px;
+  background-color: lightgray;
+}
+.modal-header {
+  padding-bottom: 10px;
+}
+/* .mb-3 {
+  padding-bottom: 20px;
+} */
+
+.modal-dialog {
+  /* max-width: fit-content; */
+  /* width: 500px;
+  height: 170px;
+  margin-left: 370px; */
+  text-align: center;
+}
+.form-control {
+  margin-bottom: 10px;
+}
+
+.shortMsg {
+  vertical-align: top;
+  margin-left: 21px;
+}
+
+.footerModal {
+  display: flex;
+  margin-left: 165px;
+}
+
+.sendModal {
+  margin-left: 10px;
+}
+
+#close-modal {
+  margin-top: 0;
+  margin-bottom: 0;
+}

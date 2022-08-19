@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 10px;
+  overflow-y: hidden;
+  width: 100vw;
+  display: flex;
+  background-color: steelblue;
+  min-height: fit-content;
+  align-items: center;
+}
+
+#nav-links {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  width: 65%;
+  justify-content: space-between;
+}
+#logo-wrapper img {
+  width: 100%;
+}
+/* Stacks all links inside #nav-links ([id="home" & id="my-work-links"] when screen is smaller than 700 px wide */
+@media only screen and (max-width: 700px) {
+  #nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Stacks work links when screen is smaller than 1200 px wide */
+@media only screen and (max-width: 1200px) {
+  #my-work-links {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#nav-links a,
+#my-work-title {
+  /* Gives each link a left/right margin */
+  margin: 0 20px;
+  color: white;
+  font-size: 25px;
+}
+
+#home a {
+  /* Extra margin around home  */
+  margin: 0 40px;
+  text-underline-offset: 10px;
+}
+
+#my-work-title {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+#project-titles {
+  min-width: 100%;
+  display: flex;
+}
+
+/* ORIGINAL CODE * {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: steelblue;
+  height: 171px;
+  position: relative;
+  overflow: hidden;
+}
+
+.co_logo img {
+  position: absolute;
+  display: flex;
+  justify-content: left;
+  padding: 3px 0 0 56px;
+}
+
+.home {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.projectTitles {
+  position: absolute;
+  top: 60%;
+  left: 41%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.py {
+  position: absolute;
+  top: 60%;
+  left: 53%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.js {
+  position: absolute;
+  top: 60%;
+  left: 68%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.rJS {
+  position: absolute;
+  top: 60%;
+  left: 84%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+} */
+
+.link {
+  /* color: black; */
+  /* color: lime; */
+  text-decoration: none;
+}
+
+.container a:hover {
+  color: orange;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
